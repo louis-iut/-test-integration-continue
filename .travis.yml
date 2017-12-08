@@ -33,4 +33,3 @@ deploy:
   file: artifacts/Comics_Releases.apk
   on:
     repo: louis-iut/-test-integration-continue
-    branches: master
