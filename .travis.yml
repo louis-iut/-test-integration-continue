@@ -9,6 +9,9 @@ android:
   - extra-google-m2repository
   - extra-android-m2repository
 
+notifications:
+    slack: lp-iem:5VypeA9fibvKjUR6g85WcL2w
+
 before_cache:
     - rm -f $HOME/.gradle/caches/modules-2/modules-2.lock
 
@@ -19,12 +22,9 @@ cache:
     - $HOME/.gradle/wrapper     #Cache the gradle
 
 before_script:
-    - chmod +777 gradlew
+    - chmod +x gradlew
    # - chmod +x ./build.sh
 
 script:
 - "./gradlew testReleaseUnitTest"
 - "./gradlew build"
-
-notifications:
-    slack: lp-iem:5VypeA9fibvKjUR6g85WcL2w
