@@ -5,6 +5,8 @@ chmod +x gradlew
 
 ./gradlew assembleRelease
 
+mv ./app/build/outputs/apk/release/app-release-unsigned.apk ./app/build/outputs/apk/release/release.apk
+
 #chemin='./artifacts'
 #mkdir -p $chemin
 #name="Comics_Release.apk"
