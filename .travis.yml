@@ -20,9 +20,9 @@ cache:
   - "$HOME/.gradle/wrapper"
 
 before_script:
-- chmod +x ./build-apk.sh
+  - chmod +x ./build-apk.sh
 script:
-- "./build-apk.sh"
+  - "./build-apk.sh"
 
 deploy:
   provider: releases
@@ -33,3 +33,7 @@ deploy:
   file: ./app/build/outputs/apk/release/*.apk
   on:
     repo: louis-iut/-test-integration-continue
+
+after_succes:
+ - git tag  -a 'date +%Y-%m-%d'
+ - git push 'date +%Y-%m-%d'
