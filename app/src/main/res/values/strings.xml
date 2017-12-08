@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Marvel Comics</string>
+    <string name="charset_name">UTF-8</string>
+    <string name="read_json_file_error">READ JSON FILE ERROR</string>
+</resources>
