@@ -27,8 +27,7 @@ script:
 - "./gradlew build"
 
 notifications:
-    slack:
+    slack: lp-iem:5VypeA9fibvKjUR6g85WcL2w
         on_success: always  
         on_failure: always 
-        rooms : - lp-iem:5VypeA9fibvKjUR6g85WcL2w
 
