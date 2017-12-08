@@ -3,9 +3,10 @@ chmod +x gradlew
 ./gradlew clean
 ./gradlew testReleaseUnitTest
 
-if [[ "$TRAVIS_PULL_REQUEST" == "true" ]]
+if [[ "$TRAVIS_BRANCH" == "master" ]]
 then
 
+  echo $TRAVIS_COMMIT
   ./gradlew assembleRelease
 
   date=`date +%Y-%m-%d`
