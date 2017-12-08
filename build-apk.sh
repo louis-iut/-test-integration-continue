@@ -13,6 +13,8 @@ chmod +x gradlew
   oldApk=$chemin'app-release-unsigned.apk'
   newApk=$chemin'release_'$date
 
+  echo "TEST"$newApk
+
   mv $oldApk $newApk
 
 #fi
