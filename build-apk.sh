@@ -14,6 +14,6 @@ then
     mkdir -p $chemin
     name="Comics_Release.apk"
     link=$chemin'/'$name
-    mv /Users/louis/Developer/workspace-tmp/app/build/outputs/apk/release/app-release-unsigned.apk $link
+    mv ./app/build/outputs/apk/release/app-release-unsigned.apk $link
 
 fi
