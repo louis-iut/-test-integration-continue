@@ -3,7 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/coder-proprement.iml" filepath="$PROJECT_DIR$/coder-proprement.iml" />
+      <module fileurl="file://$PROJECT_DIR$/workspace-tmp.iml" filepath="$PROJECT_DIR$/workspace-tmp.iml" />
     </modules>
   </component>
 </project>

@@ -8,7 +8,7 @@ import java.util.List;
  */
 
 public class Comics {
-    
+
 
     private int id;
     private String title;
