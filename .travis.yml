@@ -30,6 +30,6 @@ deploy:
     secure: 3QoYNSTFuNIaSIl+g+6QFAao1hhi8iQQqWEHP/XRb6AvGQaEqgrl0/ObzCRHVVrG26K/MZTN6IznqK9pAYwG48s0rDtOjeMITEpl5F5rq6crmzrxoniKGlySTHBFvW/7XMGE4MxE9eoqrjlz348nyqPx/Z4OgktdMILzsv2vVn8t0WE91EX1g3HMmbhPBpDsuh2VlMY8wV+n+Q0NRNlcyotHOWeznnX3pziXSZTIPrq6RrDmoMKrv3N0xS0HZ/BVtvmfyYaJEzOm91ycyyIcr+b4z71xxGeKW9K55L6EGuvD/F5TLSrhvWhAx30O7csoz5Aena7shGAjFXQk1eQF32R2et0GbUhhBdCfz/9XwWWNTz/aNRCj+4LFKN++CrYn/Le77JlnTkRDxYBOLwOQF1EliTc5QYFeboODS6DNSVd2WvQcJlm92wwohBFvCTCmL6tWv4ILvI4vlHNKOg2LSJsqz/8f4zY88W7fAXSlZL/vN3I8P2RvU44TS39uMtNON0Efogcgpq1daL1RUjhYIkIQPccUukt5GxXp5lwTHnOWvypKmgginZkmEQ+iDkfgW/hXSH/U09CSNK2DlilufxvLYeJFbsp16uYYEKdhCSs0L35muSRmqpzXujNK8fsH94wl+x/XXJ+y00gefsHr0iragSEwH7k7/JaD49ZS4+s=
   skip_cleanup: true
   file_glob: true
-  file: artifacts/Comics_Releases.apk
+  file: ./app/build/outputs/apk/release/app-release-unsigned.apk
   on:
     repo: louis-iut/-test-integration-continue
