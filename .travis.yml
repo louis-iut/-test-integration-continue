@@ -23,11 +23,8 @@ before_script:
    # - chmod +x ./build.sh
 
 script:
-- "./gradlew test"
+- "./gradlew testReleaseUnitTest"
 - "./gradlew build"
 
 notifications:
     slack: lp-iem:5VypeA9fibvKjUR6g85WcL2w
-        on_success: always  
-        on_failure: always 
-
