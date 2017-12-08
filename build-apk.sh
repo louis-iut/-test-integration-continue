@@ -3,8 +3,8 @@ chmod +x gradlew
 ./gradlew clean
 ./gradlew testReleaseUnitTest
 
-#if [[ "$TRAVIS_PULL_REQUEST" == "true" ]]
-#then
+if [[ "$TRAVIS_PULL_REQUEST" == "true" ]]
+then
 
   ./gradlew assembleRelease
 
@@ -15,4 +15,4 @@ chmod +x gradlew
 
   mv $oldApk $newApk
 
-#fi
+fi

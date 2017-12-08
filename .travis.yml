@@ -33,7 +33,3 @@ deploy:
   file: ./app/build/outputs/apk/release/*.apk
   on:
     repo: louis-iut/-test-integration-continue
-
-after_succes:
- - git tag  -a $(date -u "+%Y-%m-%d") $TRAVIS_COMMIT
- - git push $(date -u "+%Y-%m-%d")
