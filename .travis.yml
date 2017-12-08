@@ -9,6 +9,9 @@ android:
   - extra-google-m2repository
   - extra-android-m2repository
 
+  notifications:
+    slack: lp-iem:5VypeA9fibvKjUR6g85WcL2w
+
 before_cache:
     - rm -f $HOME/.gradle/caches/modules-2/modules-2.lock
 
@@ -25,3 +28,4 @@ before_script:
 script:
 - "./gradlew testDebugUnitTest"
 - "./gradlew build"
+
