@@ -3,17 +3,25 @@ chmod +x gradlew
 ./gradlew clean
 ./gradlew testReleaseUnitTest
 
-if [[ "$TRAVIS_PULL_REQUEST" == "true" ]]
-then
+./gradlew assembleRelease
 
-    echo "SUPER"
+chemin='./artifacts'
+mkdir -p $chemin
+name="Comics_Release.apk"
+link=$chemin'/'$name
+mv ./app/build/outputs/apk/release/app-release-unsigned.apk $link
 
-    ./gradlew assembleRelease
-
-    chemin='./artifacts'
-    mkdir -p $chemin
-    name="Comics_Release.apk"
-    link=$chemin'/'$name
-    mv ./app/build/outputs/apk/release/app-release-unsigned.apk $link
-
-fi
+#if [[ "$TRAVIS_PULL_REQUEST" != "true" ]]
+#then
+#
+#    echo "SUPER"
+#
+#   ./gradlew assembleRelease
+#
+#    chemin='./artifacts'
+#    mkdir -p $chemin
+#    name="Comics_Release.apk"
+#    link=$chemin'/'$name
+#    mv ./app/build/outputs/apk/release/app-release-unsigned.apk $link
+#
+#fi
