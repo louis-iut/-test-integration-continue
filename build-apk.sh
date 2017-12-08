@@ -8,7 +8,7 @@ chmod +x gradlew
 
   ./gradlew assembleRelease
 
-  date='date +%Y-%m-%d'
+  date="date +%Y-%m-%d"
   chemin='./app/build/outputs/apk/release/'
   oldApk=$chemin'app-release-unsigned.apk'
   newApk=$chemin'release_'$date'.apk'
