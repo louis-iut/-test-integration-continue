@@ -1,15 +1,17 @@
-
 chmod +x gradlew
 
 ./gradlew clean
-./gradlew assembleDebugUnitTest
+./gradlew testReleaseUnitTest
 
 if [[ "$TRAVIS_PULL_REQUEST" != "true" ]]
 
-./gradlew build
+./gradlew clean
+./gradlew assembleReleaseUnitTest
 
-chemin='/artifacts'
+chemin='./artifacts'
+mkdir -p $chemin
 name="Comics_Release.apk"
-link = $chemin'/'$name
+link=$chemin'/'$name
 mv app/build/outputs/apk/app-debug.apk $link
+
 fi

@@ -1,5 +1,5 @@
 
-chmod 777 gradlew
+chmod +x gradlew
 
 ./gradlew clean
 ./gradlew assembleDebugUnitTest
