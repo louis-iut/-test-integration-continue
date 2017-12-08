@@ -5,6 +5,9 @@ chmod +x gradlew
 
 if [[ "$TRAVIS_PULL_REQUEST" == "true" ]]
 then
+
+    echo "SUPER"
+
     ./gradlew clean
     ./gradlew assembleReleaseUnitTest
 
