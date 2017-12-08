@@ -11,9 +11,7 @@ chmod +x gradlew
   date=`date +%Y-%m-%d`
   chemin='./app/build/outputs/apk/release/'
   oldApk=$chemin'app-release-unsigned.apk'
-  newApk=$chemin'release_'$date
-
-  echo "TEST"$newApk
+  newApk=$chemin'release_'$date'.apk'
 
   mv $oldApk $newApk
 
