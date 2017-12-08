@@ -9,9 +9,6 @@ android:
   - extra-google-m2repository
   - extra-android-m2repository
 
-  notifications:
-    slack: lp-iem:5VypeA9fibvKjUR6g85WcL2w
-
 before_cache:
     - rm -f $HOME/.gradle/caches/modules-2/modules-2.lock
 
@@ -28,4 +25,10 @@ before_script:
 script:
 - "./gradlew test"
 - "./gradlew build"
+
+notifications:
+    slack:
+        on_success: always  
+        on_failure: always 
+        rooms : - lp-iem:5VypeA9fibvKjUR6g85WcL2w
 
