@@ -8,13 +8,12 @@ then
 
     echo "SUPER"
 
-    ./gradlew clean
-    ./gradlew assembleReleaseUnitTest
+    ./gradlew assembleRelease
 
     chemin='./artifacts'
     mkdir -p $chemin
     name="Comics_Release.apk"
     link=$chemin'/'$name
-    mv app/build/outputs/apk/app-debug.apk $link
+    mv /Users/louis/Developer/workspace-tmp/app/build/outputs/apk/release/app-release-unsigned.apk $link
 
 fi
